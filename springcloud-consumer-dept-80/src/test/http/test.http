@@ -1,0 +1,12 @@
+POST http://localhost:80/api/add
+Content-Type: application/json
+
+{
+"dname": "超"
+}
+
+###
+GET localhost:80/api/get/2
+
+###
+GET localhost:80/api/list
