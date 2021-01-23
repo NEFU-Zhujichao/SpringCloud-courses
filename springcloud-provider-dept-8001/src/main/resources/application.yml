@@ -15,3 +15,14 @@ spring:
     password: root
     url: jdbc:mysql://localhost:3306/db01?serverTimezone=Asia/Shanghai
     type: com.alibaba.druid.pool.DruidDataSource
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: springcloud-porivder-dept-8001
+
+info:
+  app.name: chao
+  group.name: zhang

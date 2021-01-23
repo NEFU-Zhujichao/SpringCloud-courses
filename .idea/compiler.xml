@@ -10,14 +10,24 @@
         <module name="springcloud-provider-dept-8001" />
         <module name="springcloud-api" />
         <module name="springcloud-consumer-dept-80" />
+        <module name="springcloud-eureka-7003" />
+        <module name="springcloud-eureka-7002" />
+        <module name="springcloud-eureka-7001" />
         <module name="SpringCloud-courses" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-eureka-client" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springcloud-api" options="-parameters" />
       <module name="springcloud-consumer-dept-80" options="-parameters" />
+      <module name="springcloud-eureka-7001" options="-parameters" />
+      <module name="springcloud-eureka-7002" options="-parameters" />
+      <module name="springcloud-eureka-7003" options="-parameters" />
+      <module name="springcloud-eureka-client" options="-parameters" />
       <module name="springcloud-provider-dept-8001" options="-parameters" />
     </option>
   </component>
