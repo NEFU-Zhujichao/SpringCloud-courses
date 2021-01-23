@@ -1,5 +1,10 @@
 server:
   port: 80
 
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
 
-consumerUrl: http://localhost:8001/api/
+consumerUrl: http://SPRINGCLOUD-PROVIDER-DEPT/api/

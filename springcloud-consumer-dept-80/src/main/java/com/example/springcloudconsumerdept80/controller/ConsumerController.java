@@ -20,7 +20,6 @@ public class ConsumerController {
 
     @PostMapping("add")
     public boolean addDept(@RequestBody Dept dept){
-        System.out.println(consumerUrl);
         return restTemplate.postForObject(consumerUrl + "add",dept,boolean.class);
     }
 

@@ -8,11 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-provider-dept-8001" />
+        <module name="springcloud-provider-dept-8002" />
         <module name="springcloud-api" />
         <module name="springcloud-consumer-dept-80" />
+        <module name="springcloud-provider-dept-8003" />
         <module name="springcloud-eureka-7003" />
         <module name="springcloud-eureka-7002" />
         <module name="springcloud-eureka-7001" />
+        <module name="demo" />
         <module name="SpringCloud-courses" />
       </profile>
     </annotationProcessing>
@@ -22,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
       <module name="springcloud-api" options="-parameters" />
       <module name="springcloud-consumer-dept-80" options="-parameters" />
       <module name="springcloud-eureka-7001" options="-parameters" />
@@ -29,6 +33,8 @@
       <module name="springcloud-eureka-7003" options="-parameters" />
       <module name="springcloud-eureka-client" options="-parameters" />
       <module name="springcloud-provider-dept-8001" options="-parameters" />
+      <module name="springcloud-provider-dept-8002" options="-parameters" />
+      <module name="springcloud-provider-dept-8003" options="-parameters" />
     </option>
   </component>
 </project>
