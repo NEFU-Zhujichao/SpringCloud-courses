@@ -3,11 +3,11 @@ server:
 
 eureka:
   instance:
-    a-s-g-name: localhost # Eureka服务端的实例名字
+    a-s-g-name: localhost # Eureka鏈嶅姟绔殑瀹炰緥鍚嶅瓧
   client:
-    register-with-eureka: false # 表示是否向Eureka注册中心注册自己
-    fetch-registry: false #fetch-registry为false则表示自己为注册中心
+    register-with-eureka: false # 琛ㄧず鏄惁鍚慐ureka娉ㄥ唽涓績娉ㄥ唽鑷繁
+    fetch-registry: false #fetch-registry涓篺alse鍒欒〃绀鸿嚜宸变负娉ㄥ唽涓績
     service-url:
-      # 单机 defaultZone: http://${eureka.instance.a-s-g-name}:${server.port}/eureka/
-      ###集群
+      # 鍗曟満 defaultZone: http://${eureka.instance.a-s-g-name}:${server.port}/eureka/
+      ###闆嗙兢
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/
