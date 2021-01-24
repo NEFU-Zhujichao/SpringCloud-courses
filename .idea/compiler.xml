@@ -15,11 +15,11 @@
         <module name="springcloud-eureka-7003" />
         <module name="springcloud-eureka-7002" />
         <module name="springcloud-eureka-7001" />
-        <module name="demo" />
         <module name="SpringCloud-courses" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="11" />
       <module name="springcloud-eureka-client" target="11" />
     </bytecodeTargetLevel>
   </component>
