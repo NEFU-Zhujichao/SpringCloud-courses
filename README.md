@@ -20,7 +20,7 @@ SpringBoot：2.3.5.RELEASE SpringCloud： Hoxton.SR9
     服务端：spring-cloud-starter-netflix-eureka-server
 负载均衡(Ribbon)：spring-cloud-starter-netflix-ribbon
 面向接口调用微服务(Feign)：spring-cloud-starter-openfeign
-服务熔断,服务降级(Hystrix) ：Hystrix：spring-cloud-starter-netflix-hystrix
+服务熔断,服务降级(Hystrix) ：spring-cloud-starter-netflix-hystrix
 服务监控：spring-cloud-starter-netflix-hystrix-dashboard
 网关(zuul)：spring-cloud-starter-netflix-zuul
 ```
