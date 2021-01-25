@@ -1,0 +1,28 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: zuul9527.com
+    prefer-ip-address: true
+####  http://127.0.0.1:9527/springcloud-provider-dept/api/get/2
+####  http://127.0.0.1:9527/mydept/api/get/2
+zuul:
+  routes:
+    mydept.serviceId: springcloud-provider-dept
+    mydept.path: /mydept/**   #代替微服务访问路径
+  ignored-services: "*"  #真实开发中，所有微服务都需要隐藏，所以是通配符 *
+  #ignored-services: springcloud-provider-dept  #不能再用微服务名字访问
+  prefix: /api #设置公共前缀 http://127.0.0.1:9527/api/mydept/api/get/2
+
+info:
+  app.aname: springcloud-zuul
+  company.name: chaoCompany
+  username: chao

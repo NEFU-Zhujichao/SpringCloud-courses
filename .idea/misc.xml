@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/springcloud-consumer-dept-openfeign/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-provider-dept-hystrix-8001/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-consumer-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-zuul/pom.xml" />
       </list>
     </option>
   </component>
