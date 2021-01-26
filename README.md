@@ -1,13 +1,12 @@
-```text
-2021/1/25
-SpringCloud-config(实现配置与代码解耦)
-客户端连接服务器端 ServerConfig
-服务器端连接远程仓库
-bootstrap.yml 系统级别配置 application.yml 应用程序配置
-1.导入依赖
-2.编写bootstrap.yml 由本地客户端连接服务端 然后服务端去连接github远程仓库
-3.服务端主启动类上开启@EnableConfigServer 客户端不用添加注解
-```
+### 2021/1/25
+# SpringCloud-config(实现配置与代码解耦)  
+客户端连接服务器端 ServerConfig  
+## 服务器端连接远程仓库
+**bootstrap.yml** 系统级别配置 **application.yml** 应用程序配置
+1. 导入依赖
+2. 编写bootstrap.yml 由本地客户端连接服务端 然后服务端去连接github远程仓库
+3. 服务端主启动类上开启@EnableConfigServer 客户端不用添加注解
+---
 ```yaml
 spring:
   cloud:
@@ -17,6 +16,7 @@ spring:
       profile: dev
       uri: http://localhost:3344
 ```
+***
 ```text
 2021/1/24
 Feign: 使用接口方式调用微服务
@@ -30,7 +30,10 @@ zuul(Gateway) 路由网关 zuul需要注册到Eureka中。(外部访问微服务
 路由和过滤@EnableZuulProxy
 
 ```
+---
 # SpringCloud课外学习
+官网地址: [SpringCloud](https://spring.io/projects/spring-cloud)
+![微服务架构](https://spring.io/images/diagram-microservices-88e01c7d34c688cb49556435c130d352.svg)
 ```text
 版本依赖
 SpringBoot：2.3.5.RELEASE SpringCloud： Hoxton.SR9
