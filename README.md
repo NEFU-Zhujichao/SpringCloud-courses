@@ -1,12 +1,11 @@
-###2021/1/25
-#SpringCloud-config(实现配置与代码解耦)  
-##客户端连接服务器端 ServerConfig  
-##服务器端连接远程仓库
+### 2021/1/25
+# SpringCloud-config(实现配置与代码解耦)  
+## 客户端连接服务器端 ServerConfig  
+## 服务器端连接远程仓库
 **bootstrap.yml** 系统级别配置 **application.yml** 应用程序配置
 1. 导入依赖
 2. 编写bootstrap.yml 由本地客户端连接服务端 然后服务端去连接github远程仓库
 3. 服务端主启动类上开启@EnableConfigServer 客户端不用添加注解
----
 ```yaml
 spring:
   cloud:
