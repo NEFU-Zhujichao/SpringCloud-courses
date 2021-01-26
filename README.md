@@ -17,8 +17,9 @@ spring:
       uri: http://localhost:3344
 ```
 ***
+
+### 2021/1/24
 ```text
-2021/1/24
 Feign: 使用接口方式调用微服务
 Hystrix: 服务熔断(与服务端有关)，某个服务超时或者异常，我们会弹出一个提示信息。
          @HystrixCommand(可以绑定方法) 在服务崩了的情况将会调用绑定的方法。
@@ -28,22 +29,20 @@ Hystrix: 服务熔断(与服务端有关)，某个服务超时或者异常，我
          流量监控(Dashboard)，监控我们的微服务的请求数量，出错的请求比率等等。
 zuul(Gateway) 路由网关 zuul需要注册到Eureka中。(外部访问微服务的统一入口)
 路由和过滤@EnableZuulProxy
-
 ```
 ---
 # SpringCloud课外学习
 官网地址: [SpringCloud](https://spring.io/projects/spring-cloud)
 ![微服务架构](https://spring.io/images/diagram-microservices-88e01c7d34c688cb49556435c130d352.svg)
-```text
-版本依赖
-SpringBoot：2.3.5.RELEASE SpringCloud： Hoxton.SR9
+版本依赖  
+- SpringBoot：2.3.5.RELEASE SpringCloud： Hoxton.SR9  
 以下版本全为：2.2.6.RELEASE
-服务注册与发现(Eureka)：
-    客户端：spring-cloud-starter-netflix-eureka-client 
-    服务端：spring-cloud-starter-netflix-eureka-server
-按微服务名字调用(Ribbon)：spring-cloud-starter-netflix-ribbon
-面向接口调用微服务(Feign)：spring-cloud-starter-openfeign
-服务熔断,服务降级(Hystrix)：spring-cloud-starter-netflix-hystrix
-服务监控：spring-cloud-starter-netflix-hystrix-dashboard
-网关(zuul)：spring-cloud-starter-netflix-zuul
-```
+- 服务注册与发现(Eureka)：
+    - 客户端：spring-cloud-starter-netflix-eureka-client 
+    - 服务端：spring-cloud-starter-netflix-eureka-server
+- 按微服务名字调用(Ribbon)：spring-cloud-starter-netflix-ribbon
+- 面向接口调用微服务(Feign)：spring-cloud-starter-openfeign
+- 服务熔断,服务降级(Hystrix)：spring-cloud-starter-netflix-hystrix
+    - 服务监控：spring-cloud-starter-netflix-hystrix-dashboard
+- 网关(zuul)：spring-cloud-starter-netflix-zuul
+
