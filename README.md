@@ -1,7 +1,7 @@
-### 2021/1/25
-# SpringCloud-config(实现配置与代码解耦)  
-客户端连接服务器端 ServerConfig  
-## 服务器端连接远程仓库
+###2021/1/25
+#SpringCloud-config(实现配置与代码解耦)  
+##客户端连接服务器端 ServerConfig  
+##服务器端连接远程仓库
 **bootstrap.yml** 系统级别配置 **application.yml** 应用程序配置
 1. 导入依赖
 2. 编写bootstrap.yml 由本地客户端连接服务端 然后服务端去连接github远程仓库
@@ -40,8 +40,8 @@ zuul(Gateway) 路由网关 zuul需要注册到Eureka中。(外部访问微服务
 - 服务注册与发现(Eureka)：
     - 客户端：spring-cloud-starter-netflix-eureka-client 
     - 服务端：spring-cloud-starter-netflix-eureka-server
-- 按微服务名字调用(Ribbon)：spring-cloud-starter-netflix-ribbon
-- 面向接口调用微服务(Feign)：spring-cloud-starter-openfeign
+- 按微服务名字调用,负载均衡(Ribbon)：spring-cloud-starter-netflix-ribbon
+- 面向接口调用微服务,负载均衡(Feign)：spring-cloud-starter-openfeign
 - 服务熔断,服务降级(Hystrix)：spring-cloud-starter-netflix-hystrix
     - 服务监控：spring-cloud-starter-netflix-hystrix-dashboard
 - 网关(zuul)：spring-cloud-starter-netflix-zuul
