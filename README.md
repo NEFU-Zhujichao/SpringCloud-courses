@@ -31,7 +31,6 @@ zuul(Gateway) 路由网关 zuul需要注册到Eureka中。(外部访问微服务
 
 ```
 # SpringCloud课外学习
-
 ```text
 版本依赖
 SpringBoot：2.3.5.RELEASE SpringCloud： Hoxton.SR9
